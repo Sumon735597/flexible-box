@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1f0f988669.js" crossorigin="anonymous"></script>
     <title>flex-using</title>
     <style>
         .login-container {
@@ -33,11 +34,60 @@
             border-radius: 25px;
             border: none;
         }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding-left: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .size {
+            margin: 25px;
+        }
+
+        .link {
+            margin: 5px;
+            border-radius: 25px;
+
+            padding: 10px;
+            background-color: black;
+            color: whitesmoke;
+
+        }
+
+        .user {
+            margin: 5px;
+            border-radius: 20px;
+
+            padding: 10px;
+            background-color: whitesmoke;
+
+        }
     </style>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <span class="size">
+                <a class="link" href="#">Name</a>
+                <a class="link" href="#">Products</a>
+                <a class="link" href="#">Menu</a>
+                <a class="link" href="#">Abous Us</a>
+            </span>
+            <span class="size">
+                <a class="user" href=""><i class="far fa-user"></i></a>
+                <a class="user" href=""><i class="fas fa-sign-in-alt"></i></a>
+            </span>
+        </nav>
+    </header>
     <section class="login-container">
+
         <form action="" class="login-form">
             <h2>Login</h2>
             <input type="email" name="email" id="" placeholder="Enter Your Email">
